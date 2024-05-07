@@ -1,0 +1,239 @@
+/*-----------------------------Mensaje contacto-----------------------------------------*/
+.formmm {
+    background-image: url("C:/Users/wweju/Desktop/Cuadros 2.0/pagina final 2.0/images/fondocontacto1.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+
+
+}
+
+section .bg {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    z-index: -100;
+}
+
+section .trees {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 100;
+    pointer-events: none;
+}
+
+section .girl {
+    position: absolute;
+    scale: 0.63;
+    animation: animateGirl 30s linear infinite;
+    z-index: -100;
+
+}
+
+@keyframes animateGirl {
+    0%
+    {
+        transform: translateX(calc(100% + 100vw));
+    }
+    50%
+    {
+        transform: translateX(calc(-100% - 100vw));
+    }
+    50.01%
+    {
+        transform: translateX(calc(-100% - 100vw))rotateY(180deg);
+    }
+    100%
+    {
+        transform: translateX(calc(100% + 100vw))rotateY(180deg);
+    }
+}
+
+
+/*--------------------------------------------------------------*/
+
+.menjs {
+    position: relative;
+    padding: 60px;
+    background: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(15px);
+    border: 1px solid #000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(rgba(255, 255, 255, 0.5));
+
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+}
+
+.menjs h1 {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 3.2em;
+    font-weight: 600px;
+    color: #74006B;
+    margin-bottom: 5px;
+}
+
+.menjs .box {
+    position: relative;
+}
+
+.menjs .boxtx textarea {
+    position: relative;
+    width: 95%;
+    padding: 15px 20px;
+    outline: none;
+    font-size: 1780C9D
+    color: #74006B;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 2px;
+}
+
+.menjs .boxbt button {
+    position: relative;
+    width: 102%;
+    padding: 15px 20px;
+    outline: none;
+    font-size: 1.25em;
+    color: #fff;
+    background: #74006B;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 2px;
+}
+
+.menjs .box input {
+    position: relative;
+    width: 95%;
+    padding: 15px 20px;
+    outline: none;
+    font-size: 1.25em;
+    color: #74006B;
+    border-radius: 5px;
+    background: #fff;
+    border: none;
+    margin-bottom: 2px;
+}
+
+.menjs .box ::placeholder {
+    color: #74006B;
+}
+
+.menjs .boxtx ::placeholder {
+    color: #74006B;
+}
+
+.fond-contc {
+    text-align: center;
+    background: #8A6C6C;
+    position: relative;
+    padding: 60px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    display:grid;
+    grid-template-columns: repeat(2,50%);
+    padding:20px;
+    gap:10px;
+    width: 1000px;
+}
+
+.box-info {
+    color:#000;
+    display:flex;
+    flex-direction: column;
+    gap:50px;
+}
+
+.box-info > h1 {
+    text-align: center;
+    letter-spacing: 5px;
+    text-align: 55;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    gap:25px
+}
+
+.data > p {
+    font-size: 1rem;
+}
+
+.data > p > i {
+    color:#74006B;
+    margin-right: 10px;
+    font-size:25px;
+}
+
+.links {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+
+}
+
+.links > a {
+    width: 40px;
+    height: 40px;
+    background: #74006B;
+    transition: .1s;
+}
+
+.links > a > i {
+    color:#fff;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+.input-box {
+    position: relative;
+}
+
+
+@media screen and (max-width:600px) {
+    .container {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+    }
+
+    .box-info {
+        gap:15px;
+    }
+
+    .box-info > h1 {
+        font-size: 1.5rem;
+    }
+}
+
